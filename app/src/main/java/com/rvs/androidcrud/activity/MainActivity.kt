@@ -1,7 +1,8 @@
-package com.rvs.androidcrud
+package com.rvs.androidcrud.activity
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.rvs.androidcrud.R
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
