@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">AndroidCRUD</string>
+    <string name="appointment_image_description">An image for one of your doctor appointment</string>
+    <string name="place_hint">Place</string>
+    <string name="date_hint">Date</string>
+    <string name="time_hint">Time</string>
+    <string name="doctor_hint">Doctor</string>
+    <string name="comments_hint">Comments</string>
+    <string name="delete_button_hear">Delete Doctor Appointment</string>
 </resources>
