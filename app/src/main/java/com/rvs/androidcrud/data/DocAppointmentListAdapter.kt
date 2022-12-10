@@ -26,8 +26,9 @@ class DocAppointmentListAdapter(private val list: ArrayList<DocAppointment>,
         return ViewHolder(view, context,list)
     }
 
-    inner class ViewHolder(itemView: View, context: Context, list: ArrayList<DocAppointment>):
-                            RecyclerView.ViewHolder(itemView), View.OnClickListener {
+    inner class ViewHolder(itemView: View, context: Context,
+                           list: ArrayList<DocAppointment>):
+                           RecyclerView.ViewHolder(itemView), View.OnClickListener {
 
         var myContext = context
         var myList = list
@@ -48,9 +49,14 @@ class DocAppointmentListAdapter(private val list: ArrayList<DocAppointment>,
             deleteButton.setOnClickListener(this)
         }
 
+        override fun onClick(v: View?) {
+           // var myPosition: Int = adapterPosition
+           // var docAppointment: myList[myPosition]
+        }
 
-        override fun onClick(p0: View?) {
-            TODO("Not yet implemented")
+        fun deleteDocAppointment(id: Int) {
+            var db: DatabaseHandler = DatabaseHandler(myContext)
+            db.deleteDocAppointment(id)
         }
 
     }

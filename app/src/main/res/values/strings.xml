@@ -8,4 +8,5 @@
     <string name="comments_hint">Comments</string>
     <string name="delete_button_hear">Delete Doctor Appointment</string>
     <string name="add_appointment_description">Tap to add a doctor appointment</string>
+    <string name="edit_button_description">Edit DoctorAppointment</string>
 </resources>
