@@ -13,13 +13,17 @@
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:paddingTop="8dp"
         app:endIconMode="clear_text"
+        android:tooltipText="TEST"
         app:layout_constraintTop_toTopOf="parent">
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Enter appointment place"
+            android:singleLine="true"
             android:textColorHint="#757575"
             android:textSize="14sp" />
     </com.google.android.material.textfield.TextInputLayout>
@@ -29,6 +33,7 @@
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="225dp"
         android:layout_height="wrap_content"
+        android:padding="8dp"
         app:endIconMode="clear_text"
         app:layout_constraintTop_toBottomOf="@id/placeID_text">
 
@@ -44,6 +49,7 @@
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="225dp"
         android:layout_height="wrap_content"
+        android:padding="8dp"
         app:endIconMode="clear_text"
         app:layout_constraintTop_toBottomOf="@id/dateID_text">
 
@@ -51,6 +57,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Enter appointment time"
+            android:singleLine="true"
             android:textColorHint="#757575"
             android:textSize="14sp" />
     </com.google.android.material.textfield.TextInputLayout>
@@ -60,6 +67,7 @@
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:padding="8dp"
         app:endIconMode="clear_text"
         app:layout_constraintTop_toBottomOf="@id/timeID_text">
 
@@ -67,6 +75,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Enter appointment doctor"
+            android:singleLine="true"
             android:textColorHint="#757575"
             android:textSize="14sp" />
     </com.google.android.material.textfield.TextInputLayout>
@@ -76,6 +85,7 @@
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:padding="8dp"
         app:endIconMode="clear_text"
         app:layout_constraintTop_toBottomOf="@id/doctorID_text">
 
@@ -88,11 +98,13 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <Button
-        android:id="@+id/save_btn"
+        android:id="@+id/done_btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:text="@string/save_appointment_button"
+        android:layout_marginEnd="8dp"
+        android:padding="4dp"
+        android:text="@string/done_appointment_button"
         app:cornerRadius="16px"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/commentsID_text" />
