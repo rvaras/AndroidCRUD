@@ -9,4 +9,17 @@
     <string name="delete_button_hear">Delete Doctor Appointment</string>
     <string name="add_appointment_description">Tap to add a doctor appointment</string>
     <string name="edit_button_description">Edit DoctorAppointment</string>
+    <string name="popup_doc_appointment_place">Enter Doctor Appointment Place</string>
+    <string name="popup_doctor_appointment_date">Enter Doctor Appointment Date</string>
+    <string name="popup_doctor_appointment_tim">Enter Doctor Appointment Time</string>
+    <string name="popup_doctor_appointment_doctor">Enter Doctor Appointment Doctor</string>
+    <string name="popup_doctor_appointment_comments">Enter Doctor Appointment Comments</string>
+    <string name="type_new_place">Type Appointment Place:</string>
+    <string name="new_doc_app_place_id">Enter Appointment Place</string>
+    <string name="new_doc_app_date_id">Enter Appointment Date</string>
+    <string name="new_doc_app_time_id">Enter Appointment Time</string>
+    <string name="new_doc_app_doctor_id">Enter Appointment Doctor</string>
+    <string name="new_doc_app_comments_id">Enter Appointment Comments</string>
+    <string name="cancel_new_appointment_button">Cancel</string>
+    <string name="save_appointment_button">Save</string>
 </resources>

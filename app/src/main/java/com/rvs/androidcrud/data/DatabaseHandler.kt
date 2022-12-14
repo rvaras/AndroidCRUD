@@ -123,7 +123,7 @@ class DatabaseHandler(context: Context) : SQLiteOpenHelper(context,
         db.close()
     }
 
-    fun getdocAppointmentCount(): Int {
+    fun getDocAppointmentCount(): Int {
         var db: SQLiteDatabase = readableDatabase
         var countQuery = "SELECT * FROM " + TABLE_NAME
         var cursor: Cursor = db.rawQuery(countQuery, null)
