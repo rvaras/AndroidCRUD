@@ -18,11 +18,6 @@ class MainActivity : AppCompatActivity() {
     private var adapter: DocAppointmentListAdapter? = null
     private var docAppointmentList: ArrayList<DocAppointment>? = null
     private var docAppointmentListItems: ArrayList<DocAppointment>? = null
-    private var dialogBuilder: AlertDialog.Builder? = null
-    private var dialog: AlertDialog? = null
-
-    private var curSize: Int? = null
-
     private var layoutManager: RecyclerView.LayoutManager? = null
     var dbHandler: DatabaseHandler? = null
 
@@ -31,17 +26,13 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         dbHandler = DatabaseHandler(this)
-
         docAppointmentList = ArrayList<DocAppointment>()
         docAppointmentListItems = ArrayList()
         layoutManager = LinearLayoutManager(this)
         adapter = DocAppointmentListAdapter(docAppointmentListItems!!, this)
 
-        curSize = adapter!!.itemCount
-
-        if (curSize == 0) {
+        if (dbHandler!!.getDocAppointmentCount() == 0)  {
             Toast.makeText(this, "No items to show", Toast.LENGTH_SHORT).show()
-
         }
 
         // setup list = recyclerview
@@ -54,13 +45,19 @@ class MainActivity : AppCompatActivity() {
 
         for (c in docAppointmentList!!.iterator()) {
             val docAppointment = DocAppointment()
-            docAppointment.appId = c.appId
+            /*
             var appPlace: String? = c.appPlace
             var appDate: String? = c.appDate
             var appTime: String? = c.appTime
             var appDoctor: String? = c.appDoctor
             var appComments: String? = c.appComments
-
+            */
+            docAppointment.appPlace = "Place: ${c.appPlace}"
+            docAppointment.appDate = "Date: ${c.appDate}"
+            docAppointment.appTime = "Time: ${c.appTime}"
+            docAppointment.appDoctor = "Doctor: ${c.appDoctor}"
+            docAppointment.appComments = "Comments: ${c.appComments}"
+            docAppointment.appId = c.appId
 //            Log.d("====ID=====", c.id.toString())
 //            Log.d("====Name=====", c.choreName)
 //            Log.d("====Date=====", chore.showHumanDate(c.timeAssigned!!))
@@ -77,4 +74,5 @@ class MainActivity : AppCompatActivity() {
         }
 
     }
+
 }

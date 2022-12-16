@@ -20,6 +20,7 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/enter_appointment_place_txt"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Enter appointment place"
@@ -38,6 +39,7 @@
         app:layout_constraintTop_toBottomOf="@id/placeID_text">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/enter_appointment_date_txt"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Enter appointment date"
@@ -54,6 +56,7 @@
         app:layout_constraintTop_toBottomOf="@id/dateID_text">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/enter_appointment_time_txt"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Enter appointment time"
@@ -72,6 +75,7 @@
         app:layout_constraintTop_toBottomOf="@id/timeID_text">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/enter_appointment_doctor_txt"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Enter appointment doctor"
@@ -90,6 +94,7 @@
         app:layout_constraintTop_toBottomOf="@id/doctorID_text">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/enter_appointment_comments_txt"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Enter appointment comments"

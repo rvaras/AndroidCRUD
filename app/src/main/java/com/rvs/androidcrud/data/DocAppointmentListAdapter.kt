@@ -14,7 +14,6 @@ import androidx.recyclerview.widget.RecyclerView
 import com.rvs.androidcrud.R
 import com.rvs.androidcrud.model.DocAppointment
 
-
 class DocAppointmentListAdapter(private val list: ArrayList<DocAppointment>,
                                 private val context: Context):
                                 RecyclerView.Adapter<DocAppointmentListAdapter.ViewHolder> () {
@@ -32,8 +31,9 @@ class DocAppointmentListAdapter(private val list: ArrayList<DocAppointment>,
 
     inner class ViewHolder(itemView: View,
                            context: Context,
-                           list: ArrayList<DocAppointment>): RecyclerView.ViewHolder(itemView),
-                           View.OnClickListener {
+                           list: ArrayList<DocAppointment>)
+                : RecyclerView.ViewHolder(itemView),
+                    View.OnClickListener {
 
         var myContext = context
         var myList = list

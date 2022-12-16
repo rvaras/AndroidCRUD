@@ -3,13 +3,12 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="wrap_content">
 
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:backgroundTint="#00BCD4"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
@@ -17,7 +16,7 @@
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:padding="10dp">
+            android:padding="5dp">
 
             <ImageView
                 android:id="@+id/appImageID_img"
@@ -31,9 +30,7 @@
                 android:id="@+id/placeID_Txt"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginEnd="201dp"
-                android:layout_toStartOf="@+id/deleteId_btn"
-                android:layout_toRightOf="@+id/appImageID_img"
+                android:layout_toEndOf="@+id/appImageID_img"
                 android:hint="@string/place_hint"
                 android:textColorHint="#006064"
                 android:textStyle="bold" />
@@ -43,7 +40,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/placeID_Txt"
-                android:layout_toRightOf="@+id/appImageID_img"
+                android:layout_toEndOf="@+id/appImageID_img"
                 android:hint="@string/date_hint"
                 android:textColorHint="#006064"
                 android:textStyle="bold" />
@@ -53,7 +50,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/dateID_Txt"
-                android:layout_toRightOf="@+id/appImageID_img"
+                android:layout_toEndOf="@+id/appImageID_img"
                 android:hint="@string/time_hint"
                 android:textColorHint="#006064"
                 android:textStyle="bold" />
@@ -63,7 +60,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/timeID_Txt"
-                android:layout_toRightOf="@+id/appImageID_img"
+                android:layout_toEndOf="@+id/appImageID_img"
                 android:hint="@string/doctor_hint"
                 android:textColorHint="#006064"
                 android:textStyle="bold" />
@@ -73,7 +70,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/doctorID_Txt"
-                android:layout_toRightOf="@+id/appImageID_img"
+                android:layout_toEndOf="@+id/appImageID_img"
                 android:hint="@string/comments_hint"
                 android:textColorHint="#006064"
                 android:textStyle="bold" />
@@ -82,7 +79,7 @@
                 android:id="@+id/deleteId_btn"
                 android:layout_width="48dp"
                 android:layout_height="48dp"
-                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
                 android:background="@android:drawable/ic_menu_delete"
                 android:contentDescription="@string/delete_button_hear" />
 
@@ -91,7 +88,7 @@
                 android:layout_width="48dp"
                 android:layout_height="48dp"
                 android:layout_below="@+id/deleteId_btn"
-                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
                 android:background="@android:drawable/ic_menu_edit"
                 android:contentDescription="@string/edit_button_description" />
         </RelativeLayout>
