@@ -28,11 +28,12 @@
 
             <ImageView
                 android:id="@+id/appImageID_img"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="68dp"
+                android:layout_height="68dp"
                 android:contentDescription="@string/appointment_image_description"
-                app:srcCompat="@drawable/ic_launcher_foreground"
-                tools:ignore="ImageContrastCheck" />
+                android:paddingRight="4dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/doc_appointment_68" />
 
             <TextView
                 android:id="@+id/placeID_Txt"
@@ -88,8 +89,10 @@
                 android:layout_width="48dp"
                 android:layout_height="48dp"
                 android:layout_alignParentEnd="true"
-                android:background="@android:drawable/ic_menu_delete"
-                android:contentDescription="@string/delete_button_hear" />
+                android:background="@drawable/icon_trash_48"
+                android:backgroundTint="#000000"
+                android:contentDescription="@string/delete_button_hear"
+                android:theme="@style/Button.White" />
 
             <Button
                 android:id="@+id/editId_btn"
@@ -97,8 +100,10 @@
                 android:layout_height="48dp"
                 android:layout_below="@+id/deleteId_btn"
                 android:layout_alignParentEnd="true"
-                android:background="@android:drawable/ic_menu_edit"
-                android:contentDescription="@string/edit_button_description" />
+                android:background="@drawable/icon_pencil_48"
+                android:backgroundTint="#000000"
+                android:contentDescription="@string/edit_button_description"
+                android:theme="@style/Button.White" />
         </RelativeLayout>
 
     </androidx.cardview.widget.CardView>
